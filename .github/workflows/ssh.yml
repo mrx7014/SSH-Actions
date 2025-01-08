@@ -1,0 +1,10 @@
+name: SSH Actions
+
+on:
+  workflow_dispatch:
+    runs-on: ubuntu-latest   
+      steps:
+       - uses: actions/checkout@v4
+
+      - name: Start Session
+        run: sudo apt update;sudo apt install tmate python3;tmate
