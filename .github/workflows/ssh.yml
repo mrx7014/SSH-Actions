@@ -35,7 +35,7 @@ jobs:
          
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
-        timeout-minutes: 340
+        timeout-minutes: 360
       
       - name: Start timerbricker.py
         run: python3 timerbricker.py
