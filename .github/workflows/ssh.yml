@@ -32,6 +32,10 @@ jobs:
         with:
          ssh_key: ${{ secrets.SSH_KEY }}
          key_file: id_ecdsa
-
+         
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        timeout-minutes: 340
+      
       - name: Start timerbricker.py
         run: python3 timerbricker.py
